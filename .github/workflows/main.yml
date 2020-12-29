@@ -1,19 +1,27 @@
-name: test imagemap-tools action
+name: imagemap-tools build
 on : 
   push:
-    branches:
-      - master
+    branches: [master]
 
 jobs :
     build:
       name: react build
-      runs-on: self-hosted 
-      
+      runs-on: self-hosted
       steps:
-        - name : checkout
+        - name: Checkout source code.
           uses: actions/checkout@master
-          
-        - name : test file create
+
+        - name: install dependencies.
+          run: yarn
+
+        - name: Build
+          run: yarn build
+    
+    deploy:
+      name: react deploy
+      runs-on: self-hosted
+      steps:          
+        - name : origin direcoty clear & deploy  
           run : |
             rm -rf ~/productions/imagemap-tools/
             mkdir ~/productions/imagemap-tools
