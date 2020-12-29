@@ -12,3 +12,6 @@ jobs :
       steps:
         - name : checkout
           uses: actions/checkout@master
+          
+        - name : test file create
+          run : touch test.txt
