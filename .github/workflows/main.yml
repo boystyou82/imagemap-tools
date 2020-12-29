@@ -1,7 +1,8 @@
 name: imagemap-tools build
 on : 
   push:
-    branches: [master]
+    branches:
+      - master
 
 jobs :
     build:
