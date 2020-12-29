@@ -14,4 +14,9 @@ jobs :
           uses: actions/checkout@master
           
         - name : test file create
-          run : touch test.txt
+          run : |
+            rm -rf ~/productions/imagemap-tools/
+            mkdir ~/productions/imagemap-tools
+            cd ..
+            mv imagemap-tools/ ~/productions/
+            
