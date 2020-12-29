@@ -8,12 +8,17 @@ jobs :
     build:
       name: react build
       runs-on: self-hosted
+      env:
+        working-directory: ~/productions
+      
       steps:
         - name: Checkout source code.
           uses: actions/checkout@master
           
         - name: install dependencies.
           run: yarn
+          working-directory: ${{ env.working-directory }}
           
         - name: Build
           run: yarn build
+          working-directory: ${{ env.working-directory }}
