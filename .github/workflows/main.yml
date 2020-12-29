@@ -12,7 +12,3 @@ jobs :
       steps:
         - name : checkout
           uses: actions/checkout@master
-
-
-        
-
