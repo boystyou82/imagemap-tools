@@ -1,4 +1,4 @@
-name: as
+name: test imagemap-tools action
 on : 
   push:
     branches:
