@@ -12,16 +12,7 @@ jobs :
         working-directory: ~/productions
       
       steps:
-        - name: Checkout source code.
-          uses: actions/checkout@master
-          with:
-            path: ${{ env.working-directory}}
-          
-        - name: install dependencies.
-          run: yarn
-          working-directory: ${{ env.working-directory}}
+          - uses: actions/checkout@master
 
-          
-        - name: Build
-          run: yarn build
+        
 
