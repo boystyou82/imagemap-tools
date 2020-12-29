@@ -17,6 +17,7 @@ jobs :
           
         - name: install dependencies.
           run: yarn
+          working-directory: ${{ env.working-directory}}
 
           
         - name: Build
