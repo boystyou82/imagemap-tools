@@ -25,5 +25,5 @@ jobs :
           run : |
             rm -rf ~/productions/imagemap-tools/
             mkdir ~/productions/imagemap-tools
-            mv build/ ~/productions/
+            mv build/ ~/productions/imagemap-tools/
             
