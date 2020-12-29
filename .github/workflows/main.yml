@@ -8,11 +8,11 @@ jobs :
     build:
       name: react build
       runs-on: self-hosted        
-      env:
-        working-directory: ~/productions
       
       steps:
           - uses: actions/checkout@master
+          - name: checkout
+            working-directory: ~/productions
 
         
 
