@@ -1,4 +1,4 @@
-name: imagemap-tools build
+name: as
 on : 
   push:
     branches:
@@ -12,5 +12,3 @@ jobs :
       steps:
         - name : checkout
           uses: actions/checkout@master
-          with:
-            path: src
