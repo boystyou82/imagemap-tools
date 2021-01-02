@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from './Button';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React 테스트중입니다. 테스트중입니다
         </a>
+        <Button text="aaa" />
       </header>
     </div>
   );
